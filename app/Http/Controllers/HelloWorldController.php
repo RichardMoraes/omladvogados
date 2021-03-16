@@ -12,7 +12,6 @@ class HelloWorldController extends Controller
     public function hello($name = 'Fulano') {
          return 'O cadu é????, ' . $name;
     }
-<<<<<<< HEAD
     public function TestDatabaseConnection(){
     try {
         $database_host = Config::get('config.database_host');
@@ -34,6 +33,4 @@ class HelloWorldController extends Controller
 
     }
 }
-=======
->>>>>>> 8218833c7406e4975c8cb98c542598f8ab1ddc98
 }
