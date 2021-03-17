@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function mainPage() {
-        return view('hello_world');
+        return view('index');
    }
    public function hello($name = 'Fulano') {
         return 'O cadu é????, ' . $name;
