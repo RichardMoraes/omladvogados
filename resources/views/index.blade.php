@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- reCaptcha -->
+<script src="https://www.google.com/recaptcha/api.js?render=6LejnoMaAAAAANwHqbxGRi1rTz2PFR-J8he9_6kx"></script>
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -14,11 +16,11 @@
     <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#atuacao" class="w3-bar-item w3-button">Atuação</a>
-      <a href="#equipe" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Equipe</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
-      <a href="#contato" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contato</a>
+      <a href="client/login" class="w3-bar-item w3-button">Area do Cliente</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Equipe</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Atuação</a>
+      <a href="#map" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Onde Estamos</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contato</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -242,7 +244,7 @@ Bacharel em Direito</p>
 </div>
 
 <!-- Pricing Section -->
-<div class="w3-container w3-center w3-light-grey " style="padding: 0x 5px" id="pricing">
+<div class="w3-container w3-center w3-light-grey " style="padding: 0x 5px" id="map">
 <iframe
   width="100%"
   height="500"
@@ -270,7 +272,7 @@ Bacharel em Direito</p>
       <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
       <p>
-        <button class="w3-button w3-black" type="submit">
+        <button class="w3-button w3-black g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit' type="submit" id="send">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>

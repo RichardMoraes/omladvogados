@@ -24,3 +24,8 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+
+//reCaptcha
+function onSubmit(token) {
+  document.getElementById("send").submit();
+}
